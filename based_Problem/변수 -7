@@ -1,0 +1,12 @@
+# problem description
+생년월일을 정수로 입력받고, 년, 월, 일을 나눠서 출력하는 프로그램
+
+# solution.py
+year = int (input("6 자리 생년월일을 입력해주세요."))
+
+birth_year = year // 10000
+birth_month = year % 10000 // 100 
+birth_day = year % 100
+
+print ("출생연도는",birth_year,"월은",birth_month,"일은",birth_day,"입니다."
+
