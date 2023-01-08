@@ -1,0 +1,10 @@
+# problem description
+수학 영어 점수를 입력받고 평균을 출력해주는 프로그램을 작성하세요.
+
+# solution.py
+math = float (input("수학점수:"))
+eng = float (input("영어점수:"))
+
+avg = round((math + eng) /2,2)
+
+print("평균은",avg,"입니다."
