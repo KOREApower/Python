@@ -1,0 +1,9 @@
+# problem description
+자신의 이름 및 나이, 이메일을 변수에 담아서 출력해보기
+
+# solution.py
+name= "홍길동"
+age = 100
+mail = "stom0916@naver.com"
+
+print ("이름은", name, "\n나이는",age,"\n메일은",mail)
