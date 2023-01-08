@@ -1,0 +1,13 @@
+# problem description
+
+세 자리수를 입력받고, 각 자리수를 출력하는 프로그램
+
+# solution.py
+
+num = int (input("세 자리수를 입력해주세요."))
+
+hun_num = num // 100
+ten_num = num % 100 //10
+one_num = num % 10
+
+print ("백의 자리수는",hun_num,"\n십의 자리수는",ten_num,"\n백의 자리수는",one_num,"\n 입니다.")
