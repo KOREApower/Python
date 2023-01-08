@@ -1,0 +1,13 @@
+# problem description
+두 수를 입력받고 두수의 연산들을 출력하는 프로그램을 작성하세요. 
+
+# solution.py
+num_F = int (input("첫 번째 수:"))
+num_S = int (input("두 번째 수:"
+
+num_P = num_F + num_S
+num_M = num_F - num_S
+num_mul = num_F * num_S
+num_d = num_F / num_S
+
+print ("합은",num_P,"빼기는",num_M,"곱은",num_mul,"나누기는",num_d,"입니다.")
