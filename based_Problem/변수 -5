@@ -1,0 +1,13 @@
+# problem description
+시, 분 ,초를 입력받고 총 몇 초인지 출력하는 프로그램.
+
+#solution. py
+hour = int (input("몇 시입니까?"))
+min_ = int (input("몇 분입니까?"))
+sec = int(input("몇 초입니까?"))
+
+total_sec = hour *3600 + min_ *60 + sec
+
+print ("총",total_sec,"초 입니다.")
+
+
