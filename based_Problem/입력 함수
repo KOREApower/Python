@@ -1,0 +1,9 @@
+# problem description
+이름 나이 이메일을 입력받고 출력하기 
+
+# solution.py
+name = str(input("이름:"))
+age = int (input("나이:"))
+mail = str (input ("이메일:"))
+
+print ("이름은",name,"나이는",age,"이메일은",mail,"입니다.")
