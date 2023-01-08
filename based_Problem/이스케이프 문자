@@ -1,0 +1,7 @@
+# problem description
+
+"\ ('.')/" 를 만드시오.
+
+# solution.py
+
+print ("\"\\('.')/\"")
