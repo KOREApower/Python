@@ -1,0 +1,16 @@
+# problem description
+
+A = “대한독립”
+B = “만세”
+C = ?
+
+print (c) → 대한독립 만세만세만세~~~~~
+
+
+
+# solution.py
+a = "대한독립"
+b = "만세"
+c = a +" "+ b*3 +"~"*5 
+
+print (c)
