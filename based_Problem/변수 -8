@@ -1,0 +1,11 @@
+# problem description
+초를 입력받고 시간 분 초를 출력해주는 프로그램
+
+# solution.py
+total_sec = int (input("총 몇초입니까?"))
+
+hour = total_sec // 3600
+min_ = total_sec % 3600 // 60
+sec = total_sec % 60
+
+print ("시간:",hour,"\n분:",min_,"\n초:",sec)
