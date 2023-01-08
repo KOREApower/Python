@@ -1,0 +1,16 @@
+# problem description
+사과 3000원 ,배 2000원 일 때 사과와 배의 개수를 입력받고 총 금액을 출력하는 프로그램.
+
+# solution.py
+print ("사과 :",3000,"원\n배 :",2000,"원 \n\n\n")
+print ("="*30)
+
+app_price = 3000
+pear_price =2000
+
+app =int (input("사과 개수:"))
+pear = int (input("배 개수:"))
+
+total_price = app_price * app + pear_price * pear
+
+print ("총 금액은",total_price,"입니다.")
