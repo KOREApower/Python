@@ -1,2 +1,2 @@
-# python_programmers
-solve Python_programmers problem 
+# python
+solve Python problem 
