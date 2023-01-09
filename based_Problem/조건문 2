@@ -1,0 +1,14 @@
+# problem description
+수를 입력받고 입력한 수가 양수라면 " 양수입력" 음수라면 "음수입력" 0이면 "0입력"이라고 출력하는 프로그램
+
+#solve. py
+a = int (input("수를 입력해주세요:"))
+
+if a < 0:
+    print (a,":음수입력")
+
+if a > 0:
+    print(a,":양수입력")
+
+if a == 0:
+    print(a,":0입력")
