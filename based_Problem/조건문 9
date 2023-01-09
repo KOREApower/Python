@@ -1,0 +1,22 @@
+# problem description 
+두 수와 연산자를 입력 받고, 연산 결과를 출력하는 프로그램
+
+# solve .py
+a = int (input("첫번째 수:"))
+b = int (input("두번째 수:"))
+c = input("연산자:") # input () 안이 문자열이므로 str로 변환할 필요 없음.
+
+if c=="+":
+    print(a,"+",b,"=","a+b")
+
+if c=="-":
+    print(a,"-",b,"=","a-b")
+
+# if c == "*" or "x" or "X": 
+#     연산자 우선순위로 인해 T or "X" or "X"  이므로 무조건 True 로 인식함.
+#     print(a,"x",b,"=",a*b)
+
+# 수정코드
+if c=="*" or c == "x" or c == "X" :
+    print (a,"X",b,"=",a*b)
+    
