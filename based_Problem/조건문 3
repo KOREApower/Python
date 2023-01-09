@@ -1,0 +1,15 @@
+#problem describe
+두 수를 입력받고 둘 중 큰 수를 출력하는 프로그램 (같은 경우에는 같다고 출력)
+
+#solve.py
+a = int (input("첫번째 수:"))
+b = int (input("두번째 수:"))
+
+if a>b :
+    print ("두 수중",a,"가 더 큰 수입니다.")
+
+if a<b :
+    print ("두 수중",b,"가 더 큰 수 입니다.")
+
+if a==b :
+    print ("두 수는 똑같습니다.")
