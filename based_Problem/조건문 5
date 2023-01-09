@@ -1,0 +1,10 @@
+# problem description
+7의 배수인지 판별하는 프로그램 (0이 7의 배수로 나오는 경우는 아직 배우지 않았으므로 무시)
+
+# solve.py
+a = int (input("수를 입력하세요:"))
+
+if a % 7 ==0 :
+    print (a,":7의 배수")
+if a % 7 !=0 :
+    print (a,":7의 배수가 아니다.") 
