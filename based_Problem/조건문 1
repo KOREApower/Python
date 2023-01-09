@@ -1,0 +1,8 @@
+# problem description
+두 자리수를 입력할 때 " 두자리 수 입력 ! " 이라고 출력하는 프로그램
+
+#solve.py 
+a = int (input("두자리 수를 입력해주세요:"))
+
+if 10<=a<100:
+    print(a,"는 두자리 수 입니다!!!")
