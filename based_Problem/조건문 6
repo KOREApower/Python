@@ -1,0 +1,14 @@
+# problem description 
+국어, 수학 점수를 입력받고 평균이 80점 이상일 경우 "합격" 80점 미만일 경우 "불합격"을 나타내는 프로그램
+
+# solve.py
+kor = float (input("국어 점수를 입력하세요."))
+math = float (input("수학 점수를 입력하세요."))
+
+avg = round ((kor+math)/2,2)
+
+print("평균 점수가 80점 이상이어야 합격입니다.")
+if avg >=80 :
+    print("평균 점수:",avg,"합격")
+if avg <80 :
+    print ("평균 점수:",avg,"불합격")
