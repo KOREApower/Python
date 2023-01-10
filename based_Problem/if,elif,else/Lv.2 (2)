@@ -1,2 +1,23 @@
 # problem description
 오늘은 화요일이다. N일 후에는 무슨 요일일까?
+
+# solve.py
+
+Z = int (input("몇 일?"))
+
+Y = Z % 7 # 일수를 7로 나눈 나머지
+
+if Y == 0 :
+    print ("화요일")
+elif Y == 1 :
+    print ("수요일")
+elif Y == 2:
+    print ("목요일")
+elif Y == 3:
+    print ("금요일")
+elif Y == 4:
+    print ("토요일")
+elif Y == 5 :
+    print ("일요일")
+else :
+    print ("월요일")
