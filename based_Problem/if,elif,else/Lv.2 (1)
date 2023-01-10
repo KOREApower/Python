@@ -1,2 +1,14 @@
 # problem description
 A-B-C-D 순서로 돌아가면서 한 명당 청소를 하기로 했다. 첫날은 A가 청소를 한다고 했을 때, N 일째 당번은 누구인가?
+
+# solve.py
+Z = int (input("몇 일?"))
+
+if Z % 4 == 0:
+    print ("D")
+elif Z % 4 == 1:
+    print ("A")
+elif Z % 4 == 2:
+    print ("B")
+else :
+    print ("C")
