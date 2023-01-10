@@ -1,3 +1,13 @@
 # problem description
 수를 입력받고 입력한 수가 양수라면 “양수” 음수라면 “음수” 0이라면 “0” 이라고 출력하는 프로그램
 
+# solve.py
+
+a = int (input("수 입력:"))
+
+if a > 0 :
+    print("양수")
+elif a < 0 :
+    print("음수")
+else :
+    print ("0")
