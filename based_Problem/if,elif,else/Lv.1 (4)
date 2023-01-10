@@ -1,3 +1,17 @@
 # problem description
 두 수와 연산자를 입력받고 사칙연산 결과를 출력하는 프로그램을 작성하세요. (연산자에 이상한 값이 들어가면 “연산자가 이상해요”라고 출력하세요.)
 
+# solve.py
+
+A = int (input("첫 번째 수:"))
+B = int (input("두 번째 수:"))
+C = input ("사칙연산:")
+
+if C == "+":
+    print (A,"+",B,"=",A+B)
+elif C == "-":
+    print (A,"-",B,"=",A-B)
+elif C == "*" or C =="X" or C == "x" :
+    print (A,"X",B,"=",A*B)
+else :
+    print("연산자가 이상해요.")
