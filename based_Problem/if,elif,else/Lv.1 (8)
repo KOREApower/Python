@@ -1,2 +1,33 @@
 # problem description
 수 (A)를 입력받고 A가 3의 배수이면 “3의 배수입니다.” A가 5의 배수이면 “5의 배수입니다.” 15의 배수일 경우 “15의 배수입니다.”라고 판단하는 프로그램
+
+
+
+# solve.py 1
+
+ A = int(input("수 입력:"))
+
+ if A % 3 == 0  and A % 15!=0:
+     print("3의 배수입니다.")
+ elif A % 5 ==0  and A % 15!=0:
+     print("5의 배수입니다.")
+ elif A % 15 ==0:
+     print("15의 배수입니다.")
+     
+     
+     
+     
+     
+     
+# solve.py 2
+
+A = int (input("수 입력:"))
+
+if A % 15 == 0:
+   print (A, "15의 배수")
+
+elif A % 5 == 0:
+    print (A, "5의 배수")
+
+elif A % 3 == 0 :
+    print (A, "3의 배수")
