@@ -1,0 +1,25 @@
+# problem description 
+큰 수에서 작을 수를 뺏을 때, 받아내림이 발생하는지 판별하는 프로그램
+
+
+# solve.py
+
+A = int (input("첫번째 수:"))
+B = int (input("두번째 수:"))
+
+AA = A % 10 # 첫번째 수 일의자리
+BB = B % 10 # 두번째 수 일의자리
+
+if A-B > 0 : # A가 B보다 큰 경우
+    if AA >= BB :
+        print("받아내림 발생x")
+    elif AA < BB :
+        print("받아내림 발생o")
+
+elif A-B < 0 : # A가 B보다 작은 경우
+    if AA <= BB :
+        print("받아내림 발생x")
+    elif AA > BB :
+        print("받아내림 발생o")
+else :
+    print("두 수가 동일합니다.")
