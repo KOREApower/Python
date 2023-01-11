@@ -1,0 +1,6 @@
+# problem description
+1 부터 10까지 화면에 출력하기
+
+# solve.py
+for i in range (1,11):
+    print(i)
