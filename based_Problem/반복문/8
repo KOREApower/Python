@@ -1,0 +1,6 @@
+# problem description
+1에서 1000까지 출력해보시오.
+
+#solve.py
+for i in range(1,1001):
+    print(i)
