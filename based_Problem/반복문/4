@@ -1,0 +1,11 @@
+# problem description
+수를 입력받고 (N) 홀수이면 리스트에 추가하는 프로그램
+
+# solve.py
+li = [1,2,3,4,123,21,4,5,1,'HI']
+N = int (input("수 입력:"))
+if N % 2 == 1:
+    li.append(N)
+    print(li)
+else :
+    print ("수가 홀수가 아닙니다.")
