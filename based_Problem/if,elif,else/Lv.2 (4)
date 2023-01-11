@@ -1,0 +1,36 @@
+# problem description
+생년월일을 입력받고, 무슨 띠인지 출력하는 프로그램
+
+#solve.py
+birth = int(input("8자리 생년월일을 입력하세요:"))
+
+year = birth // 10000
+Z = year % 12 # 나머지
+print("쥐 소 호랑이 토끼 용 뱀 말 양 원숭이 닭 술 돼지 순")
+
+
+if Z == 0 :
+    print("원숭이띠")
+elif Z == 1:
+    print ("닭띠")
+elif Z == 2:
+    print("술띠")
+elif Z == 3:
+    print("돼지띠")
+elif Z == 4:
+    print("쥐띠")
+elif Z == 5:
+    print("소띠")
+elif Z == 6:
+    print("호랑이띠")
+elif Z == 7:
+    print("토끼띠")
+elif Z == 8:
+    print("용띠")
+elif Z == 9:
+    print("뱀띠")
+elif Z == 10:
+    print("말띠")
+else :
+    print("양띠")
+
