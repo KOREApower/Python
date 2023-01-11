@@ -1,0 +1,7 @@
+# problem description
+리스트를 만들고 그 안의 자료들을 출력하는 프로그램을 작성하세요.
+
+# solve.py
+li = [1,2,3,4,5,6]
+for i in li :
+    print(i)
