@@ -1,0 +1,9 @@
+# solve description
+1~ 100 까지의 합 구하기
+
+# solve.py
+su = 0
+for i in range(1,101):
+    su += i
+  
+print(su)
