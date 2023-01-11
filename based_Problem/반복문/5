@@ -1,0 +1,13 @@
+# problem description
+세 개의 수를 입력받고 평균을 출력해주는 프로그램
+
+# solve.py
+li = []
+A = int(input("수 입력:"))
+B = int(input("수 입력:"))
+C = int(input("수 입력:"))
+li.append(A)
+li.append(B)
+li.append(C)
+print(li)
+print(sum(li)/len(li))
