@@ -1,0 +1,11 @@
+# problem description
+N! = N* N-1* N-2 * ...*1
+6! > 720 , 5! > 120 , 4! > 24 , 3! > 6 이 보이게 하시오.
+
+
+# solve.py
+N = int (input("N:"))
+su = 1
+for i in range (N,0,-1):
+    su *= i
+print(N,"! >",su)
