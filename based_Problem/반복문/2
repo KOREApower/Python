@@ -1,0 +1,18 @@
+# problem description
+apple banana air이 있는 리스트에서 삭제할 단어를 입력하여 리스트에서 없앤 모습을 보여주시오.
+
+# solve.py
+li = ['apple','banana','air']
+print (li)
+
+user = input("삭제할 단어:")
+
+# 삭제할 단어가 있을 시
+if li.count(user) :
+    idx = li.index(user)
+    li.pop(idx)
+# 삭제할 단어가 없을 시
+else :
+    print("그런 단어 없음.")
+
+print(li)
