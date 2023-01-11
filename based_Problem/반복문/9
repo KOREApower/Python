@@ -1,0 +1,7 @@
+# problem description
+1에서부터 N번 까지 출력해보세요.
+
+# solve.py
+N = int (input("N:"))
+for i in range(1,N+1):
+    print(i)
