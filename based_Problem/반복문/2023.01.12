@@ -1,0 +1,390 @@
+# problem description
+# 1에서 10까지 홀수 짝수 판별하는 코드
+
+for i in range(1,11):
+    if i % 2 == 0:
+        print(i,"짝수")
+    else :
+        print(i,"홀수")
+
+
+
+# problem description
+# 1에서 N까지 홀수 짝수 판별하는 코드
+
+N = int(input("수 입력:"))
+for i in range(1,N+1):
+    if i % 2 == 0:
+        print(i,"짝수")
+    else :
+        print(i,"홀수")
+
+
+
+# problem description
+# 수를 받아서 짝수의 합과 홀수의 합 판별하는 코드
+
+
+N = int(input("수 입력:"))
+su = 0
+rnt = 0
+
+for i in range(1,N+1):
+    if i % 2 == 0 :
+        su += i
+
+    else :
+        rnt += i
+
+print (su,rnt)
+        
+# problem description
+# 수를 입력 받아서 홀수 짝수 개수 판별하는 코드
+
+1.
+N = int (input("수 입력:"))
+even = 0
+odd = 0
+
+for i in range (1,N+1):
+    if i % 2 ==0:
+        even += 1
+    else :
+        odd += 1
+print(even,odd)
+
+2.
+N = int (input("수 입력:"))
+even_li = []
+odd_li = []
+
+for i in range(1,N+1):
+    if i % 2 == 0:
+        even_li.append(i)
+    else :
+        odd_li.append(i)
+
+print (len(even_li),len(odd_li))
+
+# problem description
+# 1에서 N까지 7의 배수의 합과 개수 
+# 변수, 리스트 두개를 구하시오.
+
+#1.
+N = int(input("수 입력:"))
+su = 0
+rnt = 0
+
+for i in range(1,N+1):
+    if i % 7 ==0 :
+        su += i
+        rnt += 1
+print("7의 배수의 합",su)
+print("7의 배수의 개수",rnt)
+
+
+#2. 
+N = int (input("수 입력:"))
+
+li = []
+for i in range (1,N+1):
+    if i % 7 == 0:
+        li.append(i)
+print("7의 배수의 합",sum(li))
+print("7의 배수의 개수",len(li))
+
+# problem.description
+# A-B-C-D 가 번갈아가면서 청소를 하기로 했다. 만약 첫날 A가 당번이라면 20일부터 50일까지 당번을 출력해라
+#1.
+for i in range (20,51):
+    if i % 4 == 0:
+        print(i,"D")
+    elif i % 4 ==1:
+        print(i,"A")
+    elif i % 4 ==2:
+        print(i,"B")
+    else :
+        print(i,"D")
+
+# 2.
+li = ['A','B','C','D']
+
+for i in range (20,51):
+    print (i,li[i%4])    
+
+# problem description
+# 두 수를 입력받고, 두 수 사이의 짝수를 출력하는 프로그램
+
+1.
+A = int (input("수 입력:"))
+B = int (input("수 입력:"))
+
+li = []
+if A > B :
+    for i in range(B+1,A):
+        if i % 2 ==0:
+            li.append(i)
+else :
+    for i in range(A+1,B):
+        if i % 2 == 0:
+            li.append(i)
+
+print (li)
+
+
+2.
+A = int(input("수 입력 : "))
+B = int(input("수 입력 : "))
+
+if A > B:
+    for i in range(B+1, A):
+        if i % 2 == 0:
+            print(i, end= " ")
+else:
+    for i in range(A+1, B):
+        if i % 2 == 0:
+            print(i, end=" ")
+
+
+# problem description
+# 1에서 N까지 7의 배수의 합과 개수를 구하시오.
+
+N = int (input("수 입력:"))
+su = 0
+cnt = 0
+
+for i in range(1,N+1):
+    if i % 7 ==0:
+        su += i
+        cnt += 1
+
+print (su,cnt)
+
+
+
+
+
+
+
+# problem description
+# 1에서 N까지 3의 배수의 개수와 5의 배수의 개수의 차를 구하세요.
+
+N = int (input("수 입력:"))
+su =0
+cnt =0
+
+
+for i in range(1,N+1):
+    if i % 3 == 0:
+        su += 1
+
+    if i % 5 == 0:
+        cnt += 1
+
+print (su - cnt)
+
+# problem description
+# 한 반 학생들의 혈액형입니다. A,B,AB,O 형이 각각 몇명인지 프로그래밍 하세요. ['O', 'O', 'O', 'O', 'AB', 'B', 'A', 'A', 'O', 'AB', 'B', 'A', 'B', 'AB', 'AB', 'AB', 'O', 'A', 'A', 'AB', 'B', 'AB', 'O', 'B', 'A', 'O', 'A', 'O', 'AB', 'O', 'AB', 'AB', 'O', 'B', 'B', 'O', 'O', 'AB', 'B', 'A'] 
+
+1.
+li = ['O', 'O', 'O', 'O', 'AB', 'B', 'A', 'A', 'O', 'AB', 'B', 'A', 'B', 'AB', 'AB', 'AB', 'O', 'A', 'A', 'AB', 'B', 'AB', 'O', 'B', 'A', 'O', 'A', 'O', 'AB', 'O', 'AB', 'AB', 'O', 'B', 'B', 'O', 'O', 'AB', 'B', 'A'] 
+
+su_o = 0
+su_a = 0
+su_b = 0
+su_ab=0
+
+for i in li :
+    if i == 'O':
+        su_o += 1
+    elif i == 'A':
+        su_a += 1
+    elif i == 'B':
+        su_b += 1
+    else :
+        su_ab += 1
+print (su_a,su_ab,su_b,su_o)
+
+2. 
+li = ['O', 'O', 'O', 'O', 'AB', 'B', 'A', 'A', 'O', 'AB', 'B', 'A', 'B', 'AB', 'AB', 'AB', 'O', 'A', 'A', 'AB', 'B', 'AB', 'O', 'B', 'A', 'O', 'A', 'O', 'AB', 'O', 'AB', 'AB', 'O', 'B', 'B', 'O', 'O', 'AB', 'B', 'A'] 
+
+for i in ['O','A','B','AB']:
+    print (i,li.count(i),"명")
+
+
+
+# problem description
+# 현재 당신은 5000원이 있습니다. 편의점에 있는 물품들의 가격들이 다음과 같습니다. 구매가능한 물품의 개수를 구하세요.
+# [6600, 4800, 3400, 3200, 4500, 5500, 3200, 7800, 4200, 5300, 7500, 4200, 7200, 5600, 6700, 8000, 7000, 6700, 6200, 6100, 4700, 7200, 7100, 5700, 5900, 4300, 5200, 5600, 5900, 6600, 4900, 5800, 7100, 5800, 4500, 3200, 7800, 5300, 7200, 8000]
+        
+li = [6600, 4800, 3400, 3200, 4500, 5500, 3200, 7800, 4200, 5300, 7500, 4200, 7200, 5600, 6700, 8000, 7000, 6700, 6200, 6100, 4700, 7200, 7100, 5700, 5900, 4300, 5200, 5600, 5900, 6600, 4900, 5800, 7100, 5800, 4500, 3200, 7800, 5300, 7200, 8000]
+su = 0
+
+for i in li:
+    if i <= 5000:
+        su += 1
+print(su)
+
+
+# problem description
+# 한 반 학생들의 국어 점수이다. 80점 미만은 보충수업을 받아야한다고 했을 때, 보충수업 대상자는 몇명일까?
+[80, 70, 44, 66, 40, 80, 77, 57, 68, 90, 75, 84, 99, 52, 45, 53, 54, 96, 59, 47, 57, 68, 74, 68, 79, 60, 63, 67, 43, 100, 43, 54, 77, 59, 75, 60, 97, 47, 100, 54]
+
+li =  [80, 70, 44, 66, 40, 80, 77, 57, 68, 90, 75, 84, 99, 52, 45, 53, 54, 96, 59, 47, 57, 68, 74, 68, 79, 60, 63, 67, 43, 100, 43, 54, 77, 59, 75, 60, 97, 47, 100, 54]
+su = 0
+for i in li :
+    if i < 80 :
+        su += 1
+print(su)
+
+
+# problem description
+# 단을 입력받고 , 구구단을 출력하는 코드를 작성하세요.
+
+dan = int (input("단 입력:"))
+for i in range (1,10):
+    print (dan,"x",i,"=", dan*i)
+
+# problem description
+# 다음 프로그램을 작성하세요.
+# ---------------------------------------------------------------------------------------------
+# 몇 회 연산을 진행하시겠습니까? 2
+
+# 수 입력 : 10
+# 수 입력 : 20
+# =============
+# 1. 더하기
+# 2. 빼기
+# 3. 곱하기
+# =============
+# 연산 입력 : 1
+# 10 + 20 = 30
+
+# 수 입력 : 10
+# 수 입력 : 20
+# =============
+# 1. 더하기
+# 2. 빼기
+# 3. 곱하기
+# =============
+# 연산 입력 : 5
+# 그런 연산 없습니다
+# ---------------------------------------------------------------------------------------------
+
+print ("=" * 30)
+N = int (input("몇 회 연산을 진행:"))
+
+for i in range(N):
+    A = int(input("수 입력:"))
+    B = int (input("수 입력:"))
+    print ("=" * 30)
+    print("1. 더하기")
+    print("2.빼기")
+    print("3.곱하기")
+    print ("=" * 30)
+    C = int(input("연산 입력:"))
+
+    if C == 1 :
+        print (A,"+",B,"=",A+B)
+    elif C == 2:
+        print (A,"-",B,"=",A-B)
+    elif C == 3:
+        print (A,"*",B,"=",A*B)
+    else :
+        print("그런 연산 없습니다.")
+
+print ("=" * 30)
+
+# problem description
+# 2000년부터 3000년 까지 윤년의 개수를 구하세요.
+li = []
+for i in range(2000,3001):
+    if i % 400 == 0 :
+        li.append(i)
+    elif i % 100 == 0:
+        pass
+    elif i % 4 == 0:
+        li.append(i)
+
+print (li[134])
+print (len(li))
+
+# problem description
+# 2000년부터 3000년 까지 윤년중 204번째 윤년을 구하세요.
+li = []
+for i in range(2000,3001):
+    if i % 400 == 0 :
+        li.append(i)
+    elif i % 100 == 0:
+        pass
+    elif i % 4 == 0:
+        li.append(i)
+print (li[203]) # 컴퓨터는 0번부터 인식하기 때문
+
+# problem description
+# 아래와 같이 나오게 하시오.
+# 몇 회 입력하시겠습니까? 4
+# 수 입력 :
+# 수 입력 :
+# 수 입력 :
+# 수 입력 :
+# 13 홀수
+# 24 짝수 
+# 31 홀수
+# 22 짝수
+
+li =[]
+N = int (input("몇 회:"))
+for i in range(N):
+   A = int (input("수 입력:"))
+   li.append(A)
+
+for i in li:
+    if i % 2 ==0:
+        print(i,"짝")
+    else :
+        print(i,"홀")
+
+
+
+
+# 아래와 같이 나오도록 하시오.
+# 학생은 몇명인가요 ? 10
+# 점수 입력:
+# 점수 입력:
+# 점수 입력:
+# 점수 입력:
+# 점수 입력:
+# 점수 입력:
+# 점수 입력:
+# 점수 입력:
+# 점수 입력:
+# 점수 입력:
+# 10 명의 평균 53.3
+# 평균 이하인 학생 5명 !
+
+stu = int(input("학생명수:"))
+li = []
+
+
+
+for i in range(stu):
+    sco = int(input("점수 입력:"))
+    li.append(sco)
+su = 0
+for i in li:
+    if i < sum(li)/len(li) :
+        su += 1
+print (stu,"명의 평균",sum(li)/len(li))
+print("평균 이하인 학생",su,"명")
+
+
+
+
+
+
+
+
+
+
+
