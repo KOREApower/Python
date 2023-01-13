@@ -1,0 +1,44 @@
+# problem description
+# 두 수 (A,B)를 거꾸로 뒤집었을 때, 큰 수를 출력 (단 A,B는 세자리수 이다.)
+
+A = int(input("수 입력:"))
+B = int(input("수 입력:"))
+
+# 316 > 613
+# 287 > 782 
+A_R = A%10*100+A%100//10*10+A//100
+B_R = B%10*100+B%100//10*10+B//100
+
+if A_R > B_R :
+    print("A")
+else :
+    print("B")
+
+
+# problem description
+# 시간과 분을 입력받고, N분전 시간을 출력해주는 프로그램
+hour = int(input("시간:"))
+min_ = int(input("분:"))
+N = int(input("몇 분전:"))
+
+total_min = hour * 60 + min_ - N%1440
+
+if total_min < 0 :
+    total_min += 1440
+print(N,"분전:",total_min//60,"시",total_min%60,"분")
+
+
+# problem description
+# 시간과 분을 입력받고, N분 후 시간을 출력해주는 프로그램
+hour = int(input("시간:"))
+min_ = int(input("분:"))
+
+N = int(input("몇 분후 :"))
+
+total_t = hour * 60 + min_ + N % 1440
+
+if total_t >= 1440 :
+    total_t -= 1440
+
+print(N,"분 후:",total_t//60,"시",total_t%60,"분")
+  
