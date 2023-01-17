@@ -1,0 +1,241 @@
+# 자판기 프로그램
+# # 1. 1번을 선택
+# # 2. 2번을 선택
+# # 3. 3번을 선택
+# # 4. 4번을 선택
+# # 5. 5번을 선택
+# # 6. 6번을 선택
+# # 7. 그 외를 입력
+
+# print("="*30,"Menu","="*30)
+# print("1.콜라 / 300")
+# print("2.사이다 / 300")
+# print("3.커피 / 200")
+# print("4.돈 넣기")
+# print("5.잔돈 반환")
+# print("6.종 료")
+# print("="*66)
+
+# p = 0
+# while True :
+    
+#     print ("현재금액",p)
+#     menu = int(input("메뉴 선택:"))
+#     if menu == 1 or menu == 2:
+#         if p >= menu:
+#             print ("맛있게 드세요 !")
+#             p -= 300
+#         else :
+#             print("금액이 부족합니다 !")
+#     elif menu == 3:
+#         if p >= menu:
+#             print ("맛있게 드세요 !")
+#             p -= 200
+#         else :
+#             print("금액이 부족합니다 !")
+#     elif menu == 4:
+#         p += int(input("얼마:"))
+#     elif menu == 5:
+#         if p :
+#             print("잔돈을 반환합니다.",p)
+#             break
+#         else :
+#             print("입력된 돈이 없습니다.")
+
+#     elif menu == 6:
+#         print("프로그램이 종료됩니다.")
+#         break
+#     else : 
+#         print("잘못입력하셨습니다.")
+        
+
+# import random
+# import time
+
+# su = 0
+# t = time.time()
+# print ("1.EASY:한자리수")
+# print ("2.NOR:두자리수")
+# print ("3.HARD:세자리수")
+# pick = int(input("난이도 선택:"))
+
+# if pick == 1:
+#     mi = 1
+#     mx = 9
+# elif pick == 2:
+#     mi = 10
+#     mx = 99
+# elif pick == 3:
+#     mi = 100
+#     mx = 999
+    
+# com = random.randint(mi,mx)
+
+# while True:
+#     User = int(input("수 입력:"))
+#     su +=1
+#     if mi<=User<=mx:
+#         if User > com : # 유효한 경우
+#             print("DOWN")
+#             mx = User-1
+#         elif User < com :
+#             print("UP")
+#             mi = User+1
+#         else :
+#             print("Corret!")
+#             print("시도 횟수:",su,"걸린 시간:",time.time()-t,"초")
+#             break
+
+#     else : # 유효 x
+#         print("패널티가 적용됩니다.")
+#         su += 2
+#         time.sleep(2)
+    
+
+#     time.sleep(0.7)
+
+# 랜덤으로 뽑은 수 A, B 의 덧셈을 맞추는 프로그램을 작성하세요
+
+# import random
+
+# while True :
+#     A = random.randint(1,9)
+#     B = random.randint(1,9)
+#     N = A + B
+#     print(A,"+",B,"=",end="")
+#     User = int(input(""))
+
+#     if N == User :
+#         print ("O")
+#     else :
+#         print("X")
+#         break
+
+# 83 번 문제에서 맞추면 점수를 획득하고, 틀리면 라이프가 깎이게 해볼게요
+# import random
+# life = 5
+# score = 0
+# while True :
+#     A = random.randint(1,9)
+#     B = random.randint(1,9)
+#     N = A + B
+#     print("남은 횟수:",life)
+#     print(A,"+",B,"=",end="")
+#     User = int(input(""))
+#     life -= 1
+#     if N == User :
+#         print ("O")
+#         score += 100
+#     else :
+#         print("X")
+        
+    
+#     if life == 0:
+#         print("횟수가 0번남았으므로 프로그램이 종료됩니다.")
+#         print("총 점수:",score)
+#         break
+
+# 84 번 문제에서 이번에는 다양한 연산 문제가 나오도록 세팅해보겠습니다.
+
+
+# import random 
+# import os
+# import time
+
+# life = 5
+# score = 0
+
+# while True:
+
+#     if life == 0:                               # 반복문 탈출조건 : life 가 0 일 때
+#         break
+
+#     A = random.randint(10,99)
+#     B = random.randint(10,99)     # 숫자를 뽑는 부분
+#     op = random.randint(1,2)
+
+#     if op == 1:
+#         print(A,"+",B,"=",end=' ')
+#         C = A + B
+#     elif op == 2:
+#         print(A,"-",B,"=",end=' ')
+#         C = A - B
+
+#     print("현재 목숨 :",life,"\t현재점수 :",score)   # 문제 출력전에 현재 목숨과 점수 출력
+#             # 문제를 출력하는 프로그램
+
+#                                       # 문제의 정답을 저장
+
+#     user = int(input())                     # 값을 입력받고 정답과 비교해서 판단하는 부분
+#     if C == user:
+#         score += 100
+#         print("맞췄습니다!!")
+#     else:
+#         life -= 1
+#         print("틀렸습니다.")
+
+#     time.sleep(1)
+#     os.system("cls")
+
+# 85 번 문제에서 1/5 확률로 200 점 짜리 문제가 나오고
+# 1/4 확률로 life 가 2개걸린 문제가 나오도록 해볼게요
+
+import random 
+import os
+import time
+
+life = 5
+score = 0
+
+while True:
+
+    if life == 0:                               # 반복문 탈출조건 : life 가 0 일 때
+        break
+
+    A = random.randint(10,99)
+    B = random.randint(10,99)     # 숫자를 뽑는 부분
+    op = random.randint(1,2)
+    s200 = random.randint(1,5) 
+    l2 = random.randint(1,4)
+
+    if s200 == 1:
+        print("이번 문제는 200점짜리 입니다.")
+        score2 = 200
+    else :
+        score2 = 100
+
+    if l2 == 1:
+        print("life 2개가 걸린 문제입니다.")
+        life2 = 2
+    else :
+        life2 = 1
+    
+
+    if op == 1:
+        print(A,"+",B,"=",end=' ')
+        C = A + B
+    elif op == 2:
+        print(A,"-",B,"=",end=' ')
+        C = A - B
+
+    print("현재 목숨 :",life,"\t현재점수 :",score)   # 문제 출력전에 현재 목숨과 점수 출력
+            # 문제를 출력하는 프로그램
+
+                                      # 문제의 정답을 저장
+
+    user = int(input())                     # 값을 입력받고 정답과 비교해서 판단하는 부분
+    if C == user:
+        score += score2
+        print("맞췄습니다!!")
+    else:
+        life -= life2
+        print("틀렸습니다.")
+
+    
+
+    time.sleep(1)
+    os.system("cls")
+
+
+
+
