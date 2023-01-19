@@ -1,0 +1,378 @@
+# <problem description>
+# 문구를 입력받고 가릴문자를 입력하고 *로 가리세요 / 그만둘때는 quit입력
+
+# st = input("문자입력:")
+# li = []
+
+# while True :
+#     st1 =input("가릴문자:")
+#     if st1 == "quit" :
+#         break
+
+#     li.append(st1)
+
+# for i in li:
+#     st=st.replace(i,"*")
+# print(st)
+
+# <problem description>
+
+# 파일이름으로 사용할 수 없는 문자 덜어내기 
+# \ " / < > | ? : *
+# 파일이름 입력받고, 사용할수 없는 기호를 제거해주는 프로그램
+
+# ex1) 파일이름 입력 : <K/DA> 아칼리
+#   제거 > KDA아칼리
+
+# file = input("파일이름입력:")
+
+# for i in "\\\"/<>|?:*":
+#     file =file.replace(i,"")
+# print(file)
+
+# <problem description>
+# 1부터 1234까지 2가 등장한 횟수 출력하기
+# su = 0
+# for i in range(1,1235):
+#     su += str(i).count("2") 
+# print(su)
+
+# <problem description>
+# 한번 쓰인 단어 출력
+# cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight
+# shoes on  get up in the morn
+# cup of milk  let s rock and roll
+# king kong  kick the drum  rolling on like a rolling stone
+# sing song when i m walking home
+# jump up to the top  lebron
+# ding dong  call me on my phone
+# ice tea and a game of ping pong  huh
+# this is getting heavy
+# can you hear the bass boom  i m ready  woo hoo
+# life is sweet as honey
+# yeah  this beat cha ching like money  huh
+# disco overload  i m into that  i m good to go
+# i m diamond  you know i glow up
+# hey  so let s go
+#  cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight  hey
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa oh oh
+# bring a friend  join the crowd
+# whoever wanna come along
+# word up  talk the talk
+# just move like we off the wall
+# day or night  the sky s alight
+# so we dance to the break of dawn
+# ladies and gentlemen  i got the medicine
+# so you should keep ya eyes on the ball  huh
+# this is getting heavy
+# can you hear the bass boom  i m ready  woo hoo
+# life is sweet as honey
+# yeah  this beat cha ching like money
+# disco overload  i m into that  i m good to go
+# i m diamond  you know i glow up
+# let s go
+#  cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight  hey
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa oh oh
+# dy na na na  na na  na na na  na na na  life is dynamite
+# dy na na na  na na  na na na  na na na  life is dynamite
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa oh oh
+# dy na na na  na na  na na  ayy
+# dy na na na  na na  na na  ayy
+# dy na na na  na na  na na  ayy
+# light it up like dynamite
+# dy na na na  na na  na na  ayy
+# dy na na na  na na  na na  ayy
+# dy na na na  na na  na na  ayy
+# light it up like dynamite
+#  cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  this is ah
+#  cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight  alight  oh
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa  light it up like dynamite
+# dy na na na  na na  na na na  na na na  life is dynamite
+# dy na na na  na na  na na na  na na na  life is dynamite
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa oh oh
+
+# st = """cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight
+# shoes on  get up in the morn
+# cup of milk  let s rock and roll
+# king kong  kick the drum  rolling on like a rolling stone
+# sing song when i m walking home
+# jump up to the top  lebron
+# ding dong  call me on my phone
+# ice tea and a game of ping pong  huh
+# this is getting heavy
+# can you hear the bass boom  i m ready  woo hoo
+# life is sweet as honey
+# yeah  this beat cha ching like money  huh
+# disco overload  i m into that  i m good to go
+# i m diamond  you know i glow up
+# hey  so let s go
+#  cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight  hey
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa oh oh
+# bring a friend  join the crowd
+# whoever wanna come along
+# word up  talk the talk
+# just move like we off the wall
+# day or night  the sky s alight
+# so we dance to the break of dawn
+# ladies and gentlemen  i got the medicine
+# so you should keep ya eyes on the ball  huh
+# this is getting heavy
+# can you hear the bass boom  i m ready  woo hoo
+# life is sweet as honey
+# yeah  this beat cha ching like money
+# disco overload  i m into that  i m good to go
+# i m diamond  you know i glow up
+# let s go
+#  cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight  hey
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa oh oh
+# dy na na na  na na  na na na  na na na  life is dynamite
+# dy na na na  na na  na na na  na na na  life is dynamite
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa oh oh
+# dy na na na  na na  na na  ayy
+# dy na na na  na na  na na  ayy
+# dy na na na  na na  na na  ayy
+# light it up like dynamite
+# dy na na na  na na  na na  ayy
+# dy na na na  na na  na na  ayy
+# dy na na na  na na  na na  ayy
+# light it up like dynamite
+#  cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  this is ah
+#  cause i i i m in the stars tonight
+# so watch me bring the fire and set the night alight  alight  oh
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa  light it up like dynamite
+# dy na na na  na na  na na na  na na na  life is dynamite
+# dy na na na  na na  na na na  na na na  life is dynamite
+# shining through the city with a little funk and soul
+# so i ma light it up like dynamite  whoa oh oh"""
+
+# st = st.split()
+# li = []
+# for i in st:
+#     if st.count(i) == 1:
+#         li.append(i)
+# print(li)
+        
+# <problem description> ★★★
+# Q. 3,6,9 게임을 하려고 한다. 숫자에 3,6,9 가 들어간 횟수만큼 박수를 쳐야한다. 이 때, X 번째 박수가 나온 수를 N 이라고 할 때, 패스워드를 구하여라
+
+# 만약 X 가 3 이면 N 은 9 가 된다.
+# X 가 4 라면 N 은 13 이 된다.
+
+# X 가 1004 일 때 N 를 A 라고 한다.
+# X 가 7979 일 때 N 을 B 라고 하고
+# X 가 8282 일 때 N 를 C 라고 한다.
+
+# x = int(input("박수수:"))
+# su = 0
+# num = 1 
+
+# while True :
+
+#     for i in "369":
+#         su += str(num).count(i)
+    
+#     if x <= su :
+#         break
+
+#     num += 1
+
+# print (num)
+
+# <problem descritpion>
+# 1 에서 A 까지 이어적는다고 했을 때, 입력받은 숫자 N 이 N 번 등장하는 시점 A 를 구하려고 한다.
+
+# ex) N 을 3 이라고 했을 때, 3 이 3 번 등장할 때의 A 는 23 이다
+# 123456789101112131415161718...23
+#   x             x              x
+
+# N 이 12 일 때의 A 의 값은 127 이다
+
+# N = int(input("수입력:"))
+# st = ""
+# a = 1
+# while True:
+#     st += str(a)
+
+#     if st.count(str(N)) >= N :
+#         break
+#     a+=1
+# print(a)
+
+# problem description
+# 문장을 입력받고 첫글자만 대문자로 바꾸어주는 코드
+
+# st = input("문장입력:")
+
+# print(st[0].upper()+ st[1:].lower())
+
+# problem description
+# Q1. 다음 유니코드를 문자로 번역해서 메세지를 완성하세요.
+
+# st ="50668 47084 48516 32 54252 44592 54616 51648 32 47560 49464 50836 32 54624 32 49688 32 51080 50612 50836 126 126 32 112 121 116 104 111 110 32 50640 49436 32 47928 51228 32 51217 44540 54616 45716 32 49324 44256 47141 51012 32 44592 47476 49884 44256 32 45796 47480 32 44284 47785 50640 49436 32 51312 44552 51060 45208 47560 32 49688 50900 54616 44172 32 54617 49845 54616 49492 50556 32 54633 45768 45796 33 33 33 32 51109 45812 54616 45716 45936 32 47928 51228 45716 32 51228 32 49688 50629 32 46412 32 54396 44172 32 45908 32 50612 47140 50872 32 44144 50640 50836"
+# st =st.split()
+# for i in st:
+#     print(chr (int(i)),end="")
+    
+# problem description    
+# Q2. 문자열을 입력받고, 위 처럼 유니코드로 번역되도록 프로그램 하세요.
+
+# ex) 문자입력 : abcdefg
+# 97 98 99 100 101 102 103
+
+# st = input("문자입력:")
+
+# for i in st :
+#     print(ord (i),end="")
+
+# Q. 구구단을 2단부터 9단까지 출력하세요.
+# ===================================
+# 3 이 등장하는 횟수 A
+# 5 가 등장하는 횟수 B
+# 7 가 등장하는 횟수 C
+# 9 가 등장하는 횟수 D
+# ===================================
+
+# for i in range (2,10):
+#     for j in range (1,10):
+#         print (i,"X",j,"=",j*i)
+
+# st = """
+# 2 X 1 = 2
+# 2 X 2 = 4
+# 2 X 3 = 6
+# 2 X 4 = 8
+# 2 X 5 = 10
+# 2 X 6 = 12
+# 2 X 7 = 14
+# 2 X 8 = 16
+# 2 X 9 = 18
+# 3 X 1 = 3
+# 3 X 2 = 6
+# 3 X 3 = 9
+# 3 X 4 = 12
+# 3 X 5 = 15
+# 3 X 6 = 18
+# 3 X 7 = 21
+# 3 X 8 = 24
+# 3 X 9 = 27
+# 4 X 1 = 4
+# 4 X 2 = 8
+# 4 X 3 = 12
+# 4 X 4 = 16
+# 4 X 5 = 20
+# 4 X 6 = 24
+# 4 X 7 = 28
+# 4 X 8 = 32
+# 4 X 9 = 36
+# 5 X 1 = 5
+# 5 X 2 = 10
+# 5 X 3 = 15
+# 5 X 4 = 20
+# 5 X 5 = 25
+# 5 X 6 = 30
+# 5 X 7 = 35
+# 5 X 8 = 40
+# 5 X 9 = 45
+# 6 X 1 = 6
+# 6 X 2 = 12
+# 6 X 3 = 18
+# 6 X 4 = 24
+# 6 X 5 = 30
+# 6 X 6 = 36
+# 6 X 7 = 42
+# 6 X 8 = 48
+# 6 X 9 = 54
+# 7 X 1 = 7
+# 7 X 2 = 14
+# 7 X 3 = 21
+# 7 X 4 = 28
+# 7 X 5 = 35
+# 7 X 6 = 42
+# 7 X 7 = 49
+# 7 X 8 = 56
+# 7 X 9 = 63
+# 8 X 1 = 8
+# 8 X 2 = 16
+# 8 X 3 = 24
+# 8 X 4 = 32
+# 8 X 5 = 40
+# 8 X 6 = 48
+# 8 X 7 = 56
+# 8 X 8 = 64
+# 8 X 9 = 72
+# 9 X 1 = 9
+# 9 X 2 = 18
+# 9 X 3 = 27
+# 9 X 4 = 36
+# 9 X 5 = 45
+# 9 X 6 = 54
+# 9 X 7 = 63
+# 9 X 8 = 72
+# 9 X 9 = 81"""
+
+# print (st.count("3"),st.count("5"),st.count("7"),st.count("9"))
+
+
+# problem description
+# 54620 45804 46041 50504 32 44256 49373 47566 51004 49512 49845 45768 45796 126 32 54056 49828 50892 46300 45716 32 52264 47049 32 48264 54840 54032 50640 32 51080 45716 32 49707 51088 47484 32 52264 47168 45824 47196 32 51077 47141 54616 49884 47732 32 46121 45768 45796 46 32 50937 32 48652 46972 50864 51200 32 50668 49884 44256 33 33 32 50668 44592 47196 32 46308 50612 44032 48372 49464 50836 32 104 116 116 112 115 58 47 47 119 119 119 46 99 111 117 112 97 110 103 46 99 111 109 47 118 112 47 112 114 111 100 117 99 116 115 47 53 49 50 51 50 54 56 49 48 49 63 105 116 101 109 73 100 61 55 48 48 53 48 48 57 53 48 51 38 118 101 110 100 111 114 73 116 101 109 73 100 61 55 52 50 57 55 50 55 51 57 52 50 38 115 114 99 61 49 48 52 50 53 48 51 38 115 112 101 99 61 55 48 51 48 52 55 55 55 38 97 100 100 116 97 103 61 52 48 48 38 99 116 97 103 61 53 49 50 51 50 54 56 49 48 49 38 108 112 116 97 103 61 73 55 48 48 53 48 48 57 53 48 51 86 55 52 50 57 55 50 55 51 57 52 50 65 51 52 51 53 50 51 54 53 51 38 105 116 105 109 101 61 50 48 50 50 49 50 51 48 49 52 53 56 52 56 38 112 97 103 101 84 121 112 101 61 80 82 79 68 85 67 84 38 112 97 103 101 86 97 108 117 101 61 53 49 50 51 50 54 56 49 48 49 38 119 80 99 105 100 61 49 54 55 49 48 55 56 53 54 55 55 52 57 49 48 48 53 52 57 53 51 49 49 38 119 82 101 102 61 38 119 84 105 109 101 61 50 48 50 50 49 50 51 48 49 52 53 56 52 56 38 114 101 100 105 114 101 99 116 61 108 97 110 100 105 110 103 38 65 100 78 111 100 101 73 100 61 51 52 51 53 50 51 54 53 51 38 103 99 108 105 100 61 69 65 73 97 73 81 111 98 67 104 77 73 95 99 51 99 113 116 83 103 95 65 73 86 66 115 69 87 66 82 51 56 104 119 67 101 69 65 81 89 65 105 65 66 69 103 73 89 66 102 68 95 66 119 69 38 99 97 109 112 97 105 103 110 105 100 61 49 57 48 55 51 50 49 53 51 53 57 38 97 100 103 114 111 117 112 105 100 61 49 52 55 53 51 52 52 48 55 52 48 49 38 105 115 65 100 100 101 100 67 97 114 116 61
+# 암호해독
+# st = "54620 45804 46041 50504 32 44256 49373 47566 51004 49512 49845 45768 45796 126 32 54056 49828 50892 46300 45716 32 52264 47049 32 48264 54840 54032 50640 32 51080 45716 32 49707 51088 47484 32 52264 47168 45824 47196 32 51077 47141 54616 49884 47732 32 46121 45768 45796 46 32 50937 32 48652 46972 50864 51200 32 50668 49884 44256 33 33 32 50668 44592 47196 32 46308 50612 44032 48372 49464 50836 32 104 116 116 112 115 58 47 47 119 119 119 46 99 111 117 112 97 110 103 46 99 111 109 47 118 112 47 112 114 111 100 117 99 116 115 47 53 49 50 51 50 54 56 49 48 49 63 105 116 101 109 73 100 61 55 48 48 53 48 48 57 53 48 51 38 118 101 110 100 111 114 73 116 101 109 73 100 61 55 52 50 57 55 50 55 51 57 52 50 38 115 114 99 61 49 48 52 50 53 48 51 38 115 112 101 99 61 55 48 51 48 52 55 55 55 38 97 100 100 116 97 103 61 52 48 48 38 99 116 97 103 61 53 49 50 51 50 54 56 49 48 49 38 108 112 116 97 103 61 73 55 48 48 53 48 48 57 53 48 51 86 55 52 50 57 55 50 55 51 57 52 50 65 51 52 51 53 50 51 54 53 51 38 105 116 105 109 101 61 50 48 50 50 49 50 51 48 49 52 53 56 52 56 38 112 97 103 101 84 121 112 101 61 80 82 79 68 85 67 84 38 112 97 103 101 86 97 108 117 101 61 53 49 50 51 50 54 56 49 48 49 38 119 80 99 105 100 61 49 54 55 49 48 55 56 53 54 55 55 52 57 49 48 48 53 52 57 53 51 49 49 38 119 82 101 102 61 38 119 84 105 109 101 61 50 48 50 50 49 50 51 48 49 52 53 56 52 56 38 114 101 100 105 114 101 99 116 61 108 97 110 100 105 110 103 38 65 100 78 111 100 101 73 100 61 51 52 51 53 50 51 54 53 51 38 103 99 108 105 100 61 69 65 73 97 73 81 111 98 67 104 77 73 95 99 51 99 113 116 83 103 95 65 73 86 66 115 69 87 66 82 51 56 104 119 67 101 69 65 81 89 65 105 65 66 69 103 73 89 66 102 68 95 66 119 69 38 99 97 109 112 97 105 103 110 105 100 61 49 57 48 55 51 50 49 53 51 53 57 38 97 100 103 114 111 117 112 105 100 61 49 52 55 53 51 52 52 48 55 52 48 49 38 105 115 65 100 100 101 100 67 97 114 116 61"
+# for i in st.split() :
+#     print (chr(int(i)),end="")
+    
+# problem description
+# Q. 수험생 100명의 세 과목 점수이다. 평균이 70 이상이면 "합격", 70 미만은 "불합격"이라고 한다. 평균이 70 이상이지만, 한 과목이라도 60 점 미만일 경우 "과락" 에 해당된다고 했을 때 다음을 구하세요.
+
+# ==================================
+# 합격한 경우 (A)
+# 과락에 의해 불합격한 경우 (B)
+# 불합격한 경우 (C)
+# ==================================
+
+# # [[78, 46, 51], [56, 39, 54], [86, 30, 90], [55, 97, 31], [74, 48, 55], [93, 50, 39], [65, 90, 96], [82, 76, 63], [55, 99, 71], [74, 35, 37], [81, 68, 34], [44, 86, 30], [74, 83, 73], [67, 100, 95], [49, 78, 30], [59, 99, 98], [62, 72, 47], [76, 94, 44], [36, 48, 93], [93, 64, 68], [85, 82, 32], [58, 40, 82], [56, 58, 40], [65, 30, 72], [55, 76, 81], [77, 41, 35], [64, 38, 56], [57, 46, 74], [30, 51, 67], [96, 74, 33], [47, 81, 43], [32, 97, 40], [92, 31, 97], [60, 62, 61], [55, 41, 94], [48, 93, 82], [70, 31, 70], [53, 73, 71], [51, 54, 74], [88, 89, 98], [62, 86, 40], [97, 52, 71], [65, 64, 59], [57, 71, 82], [82, 83, 66], [42, 61, 68], [70, 88, 37], [78, 85, 57], [72, 54, 82], [65, 87, 65], [55, 78, 81], [68, 89, 34], [62, 49, 95], [82, 65, 49], [46, 61, 95], [94, 33, 95], [31, 31, 49], [55, 65, 69], [65, 77, 80], [38, 55, 56], [81, 47, 49], [83, 31, 34], [31, 50, 96], [76, 62, 78], [36, 53, 63], [91, 36, 77], [85, 74, 55], [89, 76, 64], [39, 92, 74], [40, 36, 72], [99, 89, 58], [38, 38, 40], [68, 99, 84], [67, 66, 49], [95, 86, 38], [83, 80, 97], [63, 100, 84], [69, 49, 51], [65, 74, 99], [57, 36, 40], [69, 86, 60], [43, 47, 77], [80, 74, 80], [34, 89, 65], [44, 69, 97], [31, 72, 75], [33, 75, 78], [100, 92, 68], [64, 71, 97], [31, 96, 69], [83, 44, 71], [79, 40, 66], [45, 60, 30], [99, 77, 62], [92, 40, 72], [40, 55, 77], [44, 80, 41], [72, 41, 42], [61, 52, 37], [57, 92, 75]]
+# li =  [[78, 46, 51], [56, 39, 54], [86, 30, 90], [55, 97, 31], [74, 48, 55], [93, 50, 39], [65, 90, 96], [82, 76, 63], [55, 99, 71], [74, 35, 37], [81, 68, 34], [44, 86, 30], [74, 83, 73], [67, 100, 95], [49, 78, 30], [59, 99, 98], [62, 72, 47], [76, 94, 44], [36, 48, 93], [93, 64, 68], [85, 82, 32], [58, 40, 82], [56, 58, 40], [65, 30, 72], [55, 76, 81], [77, 41, 35], [64, 38, 56], [57, 46, 74], [30, 51, 67], [96, 74, 33], [47, 81, 43], [32, 97, 40], [92, 31, 97], [60, 62, 61], [55, 41, 94], [48, 93, 82], [70, 31, 70], [53, 73, 71], [51, 54, 74], [88, 89, 98], [62, 86, 40], [97, 52, 71], [65, 64, 59], [57, 71, 82], [82, 83, 66], [42, 61, 68], [70, 88, 37], [78, 85, 57], [72, 54, 82], [65, 87, 65], [55, 78, 81], [68, 89, 34], [62, 49, 95], [82, 65, 49], [46, 61, 95], [94, 33, 95], [31, 31, 49], [55, 65, 69], [65, 77, 80], [38, 55, 56], [81, 47, 49], [83, 31, 34], [31, 50, 96], [76, 62, 78], [36, 53, 63], [91, 36, 77], [85, 74, 55], [89, 76, 64], [39, 92, 74], [40, 36, 72], [99, 89, 58], [38, 38, 40], [68, 99, 84], [67, 66, 49], [95, 86, 38], [83, 80, 97], [63, 100, 84], [69, 49, 51], [65, 74, 99], [57, 36, 40], [69, 86, 60], [43, 47, 77], [80, 74, 80], [34, 89, 65], [44, 69, 97], [31, 72, 75], [33, 75, 78], [100, 92, 68], [64, 71, 97], [31, 96, 69], [83, 44, 71], [79, 40, 66], [45, 60, 30], [99, 77, 62], [92, 40, 72], [40, 55, 77], [44, 80, 41], [72, 41, 42], [61, 52, 37], [57, 92, 75]]
+# # 100 개 
+# a= 0
+# b =0
+# c = 0
+# for i in li:
+#     cnt = 0
+#     if sum(i)/len(i) < 70 :
+#         c += 1
+    
+#     elif sum(i)/len(i) >= 70:
+#         for j in i :
+#             if j < 60 :
+#                 cnt += 1
+            
+    
+#     if cnt > 0 :
+#         b+= 1
+         
+# print(a,b,c)
+    
+
+
+
